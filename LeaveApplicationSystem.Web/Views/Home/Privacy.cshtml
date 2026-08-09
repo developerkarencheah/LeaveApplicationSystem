@@ -1,6 +1,98 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p class="lead">How LeaveApplicationSystem collects, uses, and protects personal information for leave and absence management.</p>
+</div>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-8">
+            <section class="mb-4">
+                <h2>Overview</h2>
+                <p>
+                    LeaveApplicationSystem is designed to help organizations manage employee leave and absence records. We collect only the information
+                    necessary to process leave requests, coordinate approvals, and maintain accurate records for HR and payroll purposes.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h3>Information We Collect</h3>
+                <ul>
+                    <li><strong>Profile information:</strong> name, work email, employee ID, department, job title.</li>
+                    <li><strong>Leave data:</strong> leave type, dates, partial-day details, reason (optional), and attachments such as medical certificates.</li>
+                    <li><strong>Workflow data:</strong> approver identity, approval history, manager comments, and audit logs for each request.</li>
+                    <li><strong>Technical/usage data:</strong> login timestamps, IP address, device and browser details to protect accounts and troubleshoot issues.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h3>How We Use Your Data</h3>
+                <p>We use personal data to:</p>
+                <ul>
+                    <li>Process and route leave requests to the appropriate approvers.</li>
+                    <li>Send notifications and reminders to employees, managers, and HR.</li>
+                    <li>Generate reports and records required for payroll, compliance, and workforce planning.</li>
+                    <li>Support investigations into potential misuse or security incidents.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h3>Sharing and Third Parties</h3>
+                <p>
+                    We do not sell personal data. We may share information with:
+                </p>
+                <ul>
+                    <li>Authorized HR personnel and managers within your organization to manage leave and approvals.</li>
+                    <li>Trusted service providers (hosting, email delivery, document storage) who process data on our behalf under contract.
+                    </li>
+                    <li>Legal or regulatory authorities when required by law or to protect rights and safety.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h3>Retention</h3>
+                <p>
+                    Leave and employee records are retained to meet operational, legal, and regulatory requirements. Your organization can configure
+                    retention policies; contact your HR administrator for specifics about how long records are kept.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h3>Security</h3>
+                <p>
+                    We protect data using industry-standard security controls including HTTPS, access controls, encryption at rest where applicable,
+                    and audit logging. Users must keep credentials secure and report suspected account compromise immediately.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h3>Your Rights</h3>
+                <p>
+                    Depending on local law and your organization's policies you may be able to access, correct, or request deletion of your personal
+                    information. To exercise these rights, contact your HR administrator or the system administrator.
+                </p>
+            </section>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Quick facts</h5>
+                    <p class="mb-1"><strong>No selling:</strong> We do not sell personal data.</p>
+                    <p class="mb-1"><strong>Access:</strong> Managers and HR can view leave records for employees they manage.</p>
+                    <p class="mb-0"><strong>Contact:</strong> HR or system administrator for your organization.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body text-muted small">
+                    <p class="mb-1">Last updated: @DateTime.UtcNow.ToString("yyyy-MM-dd") (UTC)</p>
+                    <p class="mb-0">This page provides a general overview. For legally binding details, consult your organization's privacy notice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -29,6 +29,8 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); //added by KC
+
 app.UseRouting();
 
 app.UseAuthorization();
